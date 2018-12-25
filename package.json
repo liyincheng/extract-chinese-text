@@ -1,6 +1,6 @@
 {
   "name": "extract-chinese-text",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A tool to extract Chinese or other unicode in special range to a CSV file for i18n or other usage",
   "main": "index.js",
   "bin": {
