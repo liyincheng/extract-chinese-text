@@ -17,5 +17,5 @@ file name   line no source type  text
 index.vue   5   html    确定
 index.vue   6   html    取消
 index.vue   14  html    网络错误
-content.js   18  html    掌握程度
+content.js   18  js    掌握程度
 ```
