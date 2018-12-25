@@ -1,0 +1,23 @@
+{
+  "name": "extract-chinese-text",
+  "version": "1.0.0",
+  "description": "A tool to extract Chinese or other unicode in special range to a CSV file for i18n or other usage",
+  "main": "index.js",
+  "bin": {
+    "extract-text": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yincheng <liyincheng101@163.com>",
+  "homepage": "https://github.com/liyincheng/extract-chinese-text",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.2.3",
+    "hyntax": "^1.0.7",
+    "json2csv": "^4.3.2",
+    "optimist": "^0.6.1",
+    "recast": "^0.16.1",
+    "recursive-readdir": "^2.2.2"
+  }
+}
