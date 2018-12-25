@@ -11,8 +11,12 @@ const Json2csvParser = require('json2csv').Parser;
 // const htmlParser = require('rehype-parse');
 
 if (process.argv.length === 2) {
-    console.error('usage: extract-text [input] \n\tinput can be a directory, file or list join by \',\','
-        + '\n\tfor example: \n\t > extract-chinese-text index.js,index.vue,src/ --exclude=plugins\\|min\\.js --output=./output.csv');
+    console.log(`extract-text \\
+        src/,index.vue,index.jsx \\ # input source, file or directory, can be joined by ','
+        --exclude=min.js\|plugins \\ # [optional] some type of file want not to be processed
+        --suffix=js,jsx,vue,html,json \\ # [optional] file suffix to be processed
+        --output=output.csv \\ # [optional] output file location
+        --range=\\\\uc4e00-\\\\u9fff # [optional] char range to be extracted in`);
     return;
 }
 let path = process.argv[2] || './';
