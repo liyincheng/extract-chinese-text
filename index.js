@@ -49,7 +49,7 @@ let extractor = {
         Promise.all(promiseJob).then(() => {
             console.log(`\nTotally processed ${successCount + failedCount} files, success: ${successCount}, failed: ${failedCount}`
                 + ` (script failed: ${scriptFailedCount})\n`);
-            const fields = ["file name", "line no", "sourceType", "text"];
+            const fields = ["file name", "line no", "source type", "text"];
             const parser = new Json2csvParser({ fields });
             const csv = parser.parse(result);
             // MS Office需要一个BOM信息，不然会乱码
@@ -113,7 +113,7 @@ let extractor = {
                 'file name': fileName,
                 'line no': lineNo,
                 'text': text,
-                'sourceType': sourceType
+                'source type': sourceType
             });
         }
     },

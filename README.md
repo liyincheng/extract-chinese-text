@@ -13,7 +13,7 @@ It will extract all the Chinese charactor or specified range unicode from templa
 It bases on babel/parser to buid AST tree for js and hyntax for html. Then the script go through all the AST node to get the String type contains specified charactor and save to a CSV file.  
 The output csv file looks like: 
 ```
-file name   line no sourceType  text
+file name   line no source type  text
 index.vue   5   html    确定
 index.vue   6   html    取消
 index.vue   14  html    网络错误
