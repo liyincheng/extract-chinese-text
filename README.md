@@ -10,7 +10,7 @@ extract-text \
     --range=\\uc4e00-\\u9fff # [optional] char range to be extracted in
 ```
 It will extract all the Chinese charactor or specified range unicode from template content and attributes value of vue/jsx template and strings in js files.  
-It bases on babel/parser to buid AST tree for js and hyntax for html. Then the script go through all the AST node to get the String type contains specified charactor and save to a CSV file. 
+It bases on babel/parser to buid AST tree for js and hyntax for html. Then the script go through all the AST node to get the String type contains specified charactor and save to a CSV file.  
 The output csv file looks like: 
 ```
 file name   line no sourceType  text
