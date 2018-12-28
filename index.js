@@ -176,7 +176,7 @@ let extractor = {
         }
         // console.log(ast.loc.tokens[0]);
         ast.loc.tokens.forEach(token => {
-            if (token.type.label === 'string') {
+            if (~['string', 'jsxText'].indexOf(token.type.label)) {
                 let lineNo = token.loc.start.line + beginLine;
                 let text = (token.value || '').replace(/^'|'$/g, '');
                 // console.log(text);
