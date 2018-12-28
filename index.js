@@ -178,7 +178,7 @@ let extractor = {
         ast.loc.tokens.forEach(token => {
             if (~['string', 'jsxText'].indexOf(token.type.label)) {
                 let lineNo = token.loc.start.line + beginLine;
-                let text = (token.value || '').replace(/^'|'$/g, '');
+                let text = (token.value || '').trim().replace(/^'|'$/g, '');
                 // console.log(text);
                 extractor.saveToJSON(fileName, lineNo, 'js', text);
             }
